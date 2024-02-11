@@ -1,9 +1,15 @@
 import {React,useState,useEffect} from "react"
 const Dashboard = () => {
-	const [quote, setQuote] = useState('')
+	
 
     useEffect(()=>{
-        
+        return (
+            <>
+            <h1>
+                Hello
+            </h1>
+            </>
+        )
     },[])
 
 }
