@@ -1,0 +1,13 @@
+version: '3'
+services:
+  server:
+    build: ./server
+    ports:
+      - '1337:1337'  # Map port 1337 of the host to port 1337 of the container
+    environment:
+      - MONGODB_URI=mongodb+srv://redacedd:azerty1987@cluster0.vuwgu0m.mongodb.net/mern-app
+  client:
+    build: ./client
+    ports:
+      - '3000:3000'  # Map port 3000 of the host to port 3000 of the container
+  
